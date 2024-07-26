@@ -1,15 +1,14 @@
 -- Use the provided database
 USE alx_book_store;
 
--- Query the information_schema to get the table structure
+-- Query the information_schema to get the full description of the Books table
 SELECT 
     COLUMN_NAME AS 'Column Name',
-    DATA_TYPE AS 'Data Type',
-    CHARACTER_MAXIMUM_LENGTH AS 'Max Length',
+    COLUMN_TYPE AS 'Column Type',
     IS_NULLABLE AS 'Is Nullable',
     COLUMN_DEFAULT AS 'Default Value'
 FROM 
-    information_schema.COLUMNS
+    INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = 'alx_book_store' 
+    TABLE_SCHEMA = 'alx_book_store'
     AND TABLE_NAME = 'Books';
