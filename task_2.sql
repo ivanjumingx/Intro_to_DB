@@ -1,4 +1,4 @@
--- Ensure you are using the correct database
+-- Use the correct database
 USE alx_book_store;
 
 -- Create the 'authors' table
